@@ -1,0 +1,26 @@
+<button type="button" id="btn1" onclick="submit()">Submit</button>
+<br><br>
+<button type="button" id="btn2" onclick="sorting()">Sort</button>
+<br><br>
+<button type="button" id="btn3" onclick="show()">Show</button>
+<h3 id="ans"></h3>
+<script>
+var Guest=[];
+function submit(){
+var guest=document.getElementById("txt1").value;
+Guest.push(guest);
+document.getElementById("ans").innerHTML=Guest;
+}
+function sorting(){
+Guest.sort();
+document.getElementById("ans").innerHTML=Guest;
+}
+function show(){
+var guest=document.getElementById("txt1").value;
+Guest.push(guest);
+document.getElementById("ans").innerHTML=Guest;
+}
+</script>
+</center>
+</body>
+</html>
